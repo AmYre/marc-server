@@ -20,14 +20,9 @@ export default {
 			options: { hotspot: true },
 		},
 		{
-			name: 'content',
-			type: 'array',
-			title: 'Content',
-			of: [
-				{
-					type: 'block',
-				},
-			],
+			name: 'description',
+			title: 'Description',
+			type: 'tradDesc',
 		},
 		{
 			name: 'images',
@@ -77,7 +72,7 @@ export default {
 
 	preview: {
 		select: {
-			title: 'title',
+			title: 'title.fr',
 			manufactor: 'title',
 			media: 'image',
 		},

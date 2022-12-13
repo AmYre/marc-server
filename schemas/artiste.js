@@ -18,20 +18,23 @@ export default {
 			},
 		},
 		{
-			name: 'images',
+			name: 'image',
 			title: 'Portrait',
-			type: 'images',
+			type: 'image',
+			options: {
+				hotspot: true,
+			},
 		},
 		{
 			name: 'description',
 			title: 'Description',
-			type: 'description',
+			type: 'tradDesc',
 		},
 	],
 	preview: {
 		select: {
 			title: 'title',
-			media: 'images[0]',
+			media: 'image',
 		},
 	},
 };

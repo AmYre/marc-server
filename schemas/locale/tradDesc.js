@@ -2,6 +2,7 @@ import languages from './languages';
 
 export default {
 	name: 'tradDesc',
+	title: 'Traductions',
 	type: 'object',
 	fieldsets: [
 		{
