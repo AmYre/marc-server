@@ -11,11 +11,27 @@ export default {
 		{
 			name: 'title',
 			title: 'Titre',
-			type: 'string',
+			type: 'tradText',
+		},
+		{
+			name: 'image',
+			title: 'Image principale',
+			type: 'image',
+			options: { hotspot: true },
+		},
+		{
+			name: 'content',
+			type: 'array',
+			title: 'Content',
+			of: [
+				{
+					type: 'block',
+				},
+			],
 		},
 		{
 			name: 'images',
-			title: 'Images',
+			title: "Gelerie d'images",
 			type: 'images',
 		},
 		{
@@ -23,7 +39,7 @@ export default {
 			title: 'Slug',
 			type: 'slug',
 			options: {
-				source: 'title',
+				source: 'title.fields.title',
 				maxLength: 96,
 			},
 		},
@@ -57,23 +73,13 @@ export default {
 				},
 			],
 		},
-		{
-			name: 'description',
-			title: 'Description',
-			type: 'description',
-		},
-		{
-			name: 'price',
-			title: 'Price',
-			type: 'number',
-		},
 	],
 
 	preview: {
 		select: {
 			title: 'title',
-			manufactor: 'description',
-			media: 'images[0]',
+			manufactor: 'title',
+			media: 'image',
 		},
 	},
 };
