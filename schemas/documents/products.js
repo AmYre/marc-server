@@ -1,7 +1,10 @@
+import { GiIonicColumn } from 'react-icons/gi';
+
 export default {
-	name: 'product',
-	title: 'Product',
+	name: 'products',
+	title: 'Créations',
 	type: 'document',
+	icon: GiIonicColumn,
 	fields: [
 		{
 			name: 'ref',
@@ -34,7 +37,7 @@ export default {
 			title: 'Slug',
 			type: 'slug',
 			options: {
-				source: 'title.fields.title',
+				source: 'title.fr',
 				maxLength: 96,
 			},
 		},
@@ -55,16 +58,16 @@ export default {
 			name: 'artiste',
 			title: 'Artiste',
 			type: 'reference',
-			to: { type: 'artiste' },
+			to: { type: 'artistes' },
 		},
 		{
-			name: 'categories',
-			title: 'Categories',
+			name: 'category',
+			title: 'Catégorie',
 			type: 'array',
 			of: [
 				{
 					type: 'reference',
-					to: { type: 'category' },
+					to: { type: 'categories' },
 				},
 			],
 		},

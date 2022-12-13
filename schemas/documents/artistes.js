@@ -1,7 +1,10 @@
+import { GiMustache } from 'react-icons/gi';
+
 export default {
-	name: 'artiste',
-	title: 'Artiste',
+	name: 'artistes',
+	title: 'Artistes',
 	type: 'document',
+	icon: GiMustache,
 	fields: [
 		{
 			name: 'title',
