@@ -1,10 +1,10 @@
-import { GiPalette } from 'react-icons/gi';
+import { BsTranslate } from 'react-icons/bs';
 
 export default {
-	name: 'home',
-	title: 'Accueil',
+	name: 'texts',
+	title: 'Textes',
 	type: 'document',
-	icon: GiPalette,
+	icon: BsTranslate,
 	fields: [
 		{
 			name: 'title',
@@ -12,12 +12,9 @@ export default {
 			type: 'string',
 		},
 		{
-			name: 'image',
-			title: 'Image de fond',
-			type: 'image',
-			options: {
-				hotspot: true,
-			},
+			name: 'text',
+			title: 'Traduction',
+			type: 'tradText',
 		},
 	],
 	preview: {

@@ -15,6 +15,7 @@ export default {
 			name: 'title',
 			title: 'Titre',
 			type: 'tradText',
+			validation: (Rule) => Rule.required().warning('Remplissez ce champs'),
 		},
 		{
 			name: 'image',
@@ -29,15 +30,47 @@ export default {
 		},
 		{
 			name: 'images',
-			title: "Gelerie d'images",
+			title: "Galerie d'images",
 			type: 'images',
 		},
 		{
-			name: 'slug',
-			title: 'Slug',
+			name: 'slugfr',
+			title: 'Slug Français',
 			type: 'slug',
+			initialValue: 'title.fr',
+			validation: (Rule) => Rule.custom((field, context) => (context.document.title.fr && field === undefined ? 'Remplissez ce champs' : true)).warning('Remplissez ce champs'),
 			options: {
 				source: 'title.fr',
+				maxLength: 96,
+			},
+		},
+		{
+			name: 'slugen',
+			title: 'Slug Anglais',
+			type: 'slug',
+			validation: (Rule) => Rule.required().min(10).max(80).warning('Remplissez ce champs'),
+			options: {
+				source: 'title.en',
+				maxLength: 96,
+			},
+		},
+		{
+			name: 'slugru',
+			title: 'Slug Russe',
+			type: 'slug',
+			initialValue: 'title.fr',
+			options: {
+				source: 'title.ru',
+				maxLength: 96,
+			},
+		},
+		{
+			name: 'slugcn',
+			title: 'Slug Chinois',
+			type: 'slug',
+			initialValue: 'title.fr',
+			options: {
+				source: 'title.cn',
 				maxLength: 96,
 			},
 		},
