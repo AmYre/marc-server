@@ -87,18 +87,13 @@ export default {
 			name: 'artiste',
 			title: 'Artiste',
 			type: 'reference',
-			to: { type: 'artistes' },
+			to: { type: 'artists' },
 		},
 		{
 			name: 'category',
-			title: 'Catégorie',
-			type: 'array',
-			of: [
-				{
-					type: 'reference',
-					to: { type: 'categories' },
-				},
-			],
+			title: 'Category',
+			type: 'reference',
+			to: { type: 'category' },
 		},
 	],
 

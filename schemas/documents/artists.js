@@ -1,7 +1,7 @@
 import { GiMustache } from 'react-icons/gi';
 
 export default {
-	name: 'artistes',
+	name: 'artists',
 	title: 'Artistes',
 	type: 'document',
 	icon: GiMustache,
@@ -32,6 +32,12 @@ export default {
 			name: 'description',
 			title: 'Description',
 			type: 'tradDesc',
+		},
+		{
+			name: 'category',
+			title: 'Category',
+			type: 'reference',
+			to: { type: 'category' },
 		},
 	],
 	preview: {
