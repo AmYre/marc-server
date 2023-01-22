@@ -84,7 +84,7 @@ export default {
 			},
 		},
 		{
-			name: 'artiste',
+			name: 'artists',
 			title: 'Artiste',
 			type: 'reference',
 			to: { type: 'artists' },
