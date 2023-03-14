@@ -24,6 +24,15 @@ export default {
 			options: { hotspot: true },
 		},
 		{
+			name: 'video',
+			title: 'Video URL',
+			type: 'slug',
+			options: {
+				source: 'title.fr',
+				maxLength: 96,
+			},
+		},
+		{
 			name: 'description',
 			title: 'Description',
 			type: 'tradDesc',
