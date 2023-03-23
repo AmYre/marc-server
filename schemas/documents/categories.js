@@ -20,10 +20,23 @@ export default {
 				maxLength: 96,
 			},
 		},
+		{
+			name: 'parent',
+			type: 'reference',
+			to: [{type: 'category'}],
+			options: {
+			  filter: '!defined(parent)',
+			},
+		  },
 	],
 	preview: {
 		select: {
 			title: 'title.fr',
+			subtitle: 'parent.title.fr',
 		},
+		prepare: ({title, subtitle}) => ({
+			title,
+			subtitle: subtitle ? `– ${subtitle}` : ``,
+		  }),
 	},
 };
