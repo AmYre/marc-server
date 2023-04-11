@@ -95,12 +95,12 @@ export default {
 		{
 			name: 'artists',
 			title: 'Artiste',
-			type: 'reference',
-			to: { type: 'artists' },
+			type: 'array',
+			of: [{ type: 'reference', to: { type: 'artists' }, }],
 		},
 		{
 			name: 'category',
-			title: 'Category',
+			title: 'Catégorie',
 			type: 'reference',
 			to: { type: 'category' },
 		},

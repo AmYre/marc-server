@@ -33,12 +33,6 @@ export default {
 			title: 'Description',
 			type: 'tradDesc',
 		},
-		{
-			name: 'category',
-			title: 'Category',
-			type: 'reference',
-			to: { type: 'category' },
-		},
 	],
 	preview: {
 		select: {
