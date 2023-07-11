@@ -24,6 +24,11 @@ export default {
 			options: { hotspot: true },
 		},
 		{
+			name: 'alt',
+			title: 'Image Alt',
+			type: 'tradText',
+		},
+		{
 			name: 'video',
 			title: 'Video URL',
 			type: 'slug',
@@ -32,6 +37,12 @@ export default {
 				maxLength: 96,
 			},
 		},
+		{
+			name: 'variants',
+			title: 'Variantes Vidéo',
+			type: 'array',
+			of: [{type: 'string'}]
+		  },
 		{
 			name: 'description',
 			title: 'Description',

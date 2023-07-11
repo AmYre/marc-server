@@ -29,6 +29,11 @@ export default {
 			},
 		},
 		{
+			name: 'alt',
+			title: 'Image Alt',
+			type: 'tradText',
+		},
+		{
 			name: 'description',
 			title: 'Description',
 			type: 'tradDesc',
