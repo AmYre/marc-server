@@ -38,6 +38,11 @@ export default {
 			},
 		},
 		{
+			name : 'youtube',
+			title : 'Youtube Ready',
+			type : 'boolean',
+		}
+		{
 			name: 'youtube_fr',
 			title: 'Youtube FR',
 			type: 'string',
@@ -170,6 +175,11 @@ export default {
 			type: 'reference',
 			to: { type: 'category' },
 		},
+		{
+			name : 'sold',
+			title : 'Vendu',
+			type : 'boolean',
+		}
 	],
 
 	preview: {
