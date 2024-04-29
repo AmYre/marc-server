@@ -41,60 +41,60 @@ export default {
 			name : 'youtube',
 			title : 'Youtube Ready',
 			type : 'boolean',
-		}
+		},
 		{
 			name: 'youtube_fr',
-			title: 'Youtube FR',
+			title: 'FR Youtube ID',
 			type: 'string',
 		},
 		{
 			name : 'youtube_en',
-			title : 'Youtube EN',
+			title : 'EN Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_ru',
-			title : 'Youtube RU',
+			title : 'RU Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_cn',
-			title : 'Youtube CN',
+			title : 'CN Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_ko',
-			title : 'Youtube KO',
+			title : 'KO Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_jp',
-			title : 'Youtube JP',
+			title : 'JP Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_es',
-			title : 'Youtube ES',
+			title : 'ES Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_it',
-			title : 'Youtube IT',
+			title : 'IT Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_po',
-			title : 'Youtube PO',
+			title : 'PO Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_tu',
-			title : 'Youtube TU',
+			title : 'TU Youtube ID',
 			type : 'string'
 		},
 		{
 			name : 'youtube_ar',
-			title : 'Youtube AR',
+			title : 'AR Youtube ID',
 			type : 'string'
 		},
 		{
