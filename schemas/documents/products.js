@@ -38,11 +38,66 @@ export default {
 			},
 		},
 		{
+			name: 'youtube_fr',
+			title: 'Youtube FR',
+			type: 'string',
+		},
+		{
+			name : 'youtube_en',
+			title : 'Youtube EN',
+			type : 'string'
+		},
+		{
+			name : 'youtube_ru',
+			title : 'Youtube RU',
+			type : 'string'
+		},
+		{
+			name : 'youtube_cn',
+			title : 'Youtube CN',
+			type : 'string'
+		},
+		{
+			name : 'youtube_ko',
+			title : 'Youtube KO',
+			type : 'string'
+		},
+		{
+			name : 'youtube_jp',
+			title : 'Youtube JP',
+			type : 'string'
+		},
+		{
+			name : 'youtube_es',
+			title : 'Youtube ES',
+			type : 'string'
+		},
+		{
+			name : 'youtube_it',
+			title : 'Youtube IT',
+			type : 'string'
+		},
+		{
+			name : 'youtube_po',
+			title : 'Youtube PO',
+			type : 'string'
+		},
+		{
+			name : 'youtube_tu',
+			title : 'Youtube TU',
+			type : 'string'
+		},
+		{
+			name : 'youtube_ar',
+			title : 'Youtube AR',
+			type : 'string'
+		},
+		{
 			name: 'variants',
 			title: 'Variantes Vidéo',
 			type: 'array',
 			of: [{type: 'string'}]
-		  },
+		},
 		{
 			name: 'description',
 			title: 'Description',
